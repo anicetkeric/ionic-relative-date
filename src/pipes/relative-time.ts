@@ -50,11 +50,11 @@ export class RelativeTime implements PipeTransform {
 
     else if (elapsed < msPerMonth) {
        if(Math.round(elapsed/msPerDay ) ==1)return 'Yesterday at '+previous.getHours()+":"+previous.getMinutes();
-      return this.dateFormat(previous);
+       return Math.round(elapsed/msPerDay) + ' days ago';
     }
 
     else if (elapsed < msPerYear) {
-      return this.dateFormat(previous);
+      return 'about ' + Math.round(elapsed/msPerMonth) + ' month ago';
     }
 
     else {
