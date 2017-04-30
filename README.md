@@ -71,3 +71,12 @@ dateFormat(value):string{
         }
 
 ```
+## Usage
+The syntax for using a pipe in a template looks like this:
+```
+{{data | pipe}}
+```
+example
+```
+ <ion-note item-right>{{f.date | relativeTime}} </ion-note>
+```
