@@ -22,8 +22,8 @@ export class RelativeTime implements PipeTransform {
   }
 
   /**
-   * @param  {date} current  当前时间
-   * @param  {date} previous 历史时间
+   * @param  {date} current  
+   * @param  {date} previous 
    * @return {string}        相对时间长度
    */
   timeDifference(current, previous):string {
