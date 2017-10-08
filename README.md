@@ -24,7 +24,7 @@ export class RelativeTime implements PipeTransform {
   /**
    * @param  {date} current  
    * @param  {date} previous 
-   * @return {string}        相对时间长度
+   * @return {string}       
    */
   timeDifference(current, previous):string {
     var msPerMinute = 60 * 1000;
